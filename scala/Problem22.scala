@@ -6,7 +6,7 @@ object Problem22 {
 
   def main(args: Array[String]) {
     println(weight("abcde"))
-    val names = Source.fromPath("names.txt")
+    val names = Source.fromFile("names.txt")
                 .getLine(1)
                 .split(",")
                 .map(x => x.substring(1, x.length - 1))

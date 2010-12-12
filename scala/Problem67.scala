@@ -8,7 +8,7 @@ object Problem67 {
 
   def main(args: Array[String]) {
     val buffer = new ListBuffer[Array[BigInt]]
-    for (line <- Source.fromPath("triangle.txt").getLines("\r\n"))
+    for (line <- Source.fromFile("triangle.txt").getLines)
       buffer += line.split(" ").map(BigInt(_))
 
     // val solutionArray = new Array[Array[Long]](buffer.size)
