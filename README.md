@@ -1,0 +1,1 @@
+This is my learing of scala language by solving the problems from [projecteuler.net](http://projecteuler.net).
