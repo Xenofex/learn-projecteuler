@@ -2,7 +2,7 @@ package projecteuler
 
 import scala.math._
 
-object Util {
+package object util {
   
   def factorial(n: Int): Int = {
     if (n < 0) return 1
@@ -71,6 +71,19 @@ object Util {
         res *= n
 
       res
+    }
+  }
+
+  def combinations(n: Int, r: Int) = {
+    if (n < 0 || r < 0)
+      throw new ArithmeticException("n and r must be both non-negative integers.")
+
+    if (r > n)
+      0
+    else if (r == n || r == 0)
+      1
+    else {
+      (n - r + 1 to n).product / (1 to r).product
     }
   }
 }

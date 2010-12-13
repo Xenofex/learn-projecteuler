@@ -1,6 +1,6 @@
 package projecteuler
 
-import Util._
+import projecteuler.util._
 import scala.collection.mutable.ListBuffer
 
 object Problem35 {

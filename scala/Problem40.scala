@@ -1,6 +1,6 @@
 package projecteuler
 
-import Util._
+import util._
 
 object Problem40 {
   
